@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio - Sidebar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/styles/style.css">
+</head>
+<body>
+    <div class="container off">
+        <div class="header">
+            <img src="src/images/logo.svg" alt="ícone logo" class="logo off">
+            <img src="src/images/menu.svg" alt="ícone menu" class="menu" onclick="clickMenu()">
+        </div>
+
+        <div class="content">
+            <nav class="nav-bar off">
+                <div class="search">
+                    <img src="src/images/search.svg" alt="ícone de procura">
+                    <span class="span off" id="search">Buscar</span>
+                </div>
+                <div>
+                    <img src="src/images/grid.svg" alt="ícone grid">
+                    <span class="span off" id="dashboard">Dashboard</span>
+                </div>
+                <div>
+                    <img src="src/images/pet.svg" alt="ícone pet">
+                    <span class="span off" id="pets">Pets</span>
+                </div>
+                <div>
+                    <img src="src/images/user.svg" alt="ícone usuário">
+                    <span class="span off" id="user">Clientes</span>
+                </div>
+                <div>
+                    <img src="src/images/vet.svg" alt="ícone vet">
+                    <span class="span off" id="vets">Vets</span>
+                </div>
+                <div>
+                    <img src="src/images/settings.svg" alt="ícone configurações">
+                    <span class="span off" id="settings">Ajustes</span>
+                </div>
+            </nav>
+
+            <div class="footer">
+                <div class="profile off">
+                    <img src="src/images/photo.jpg" alt="Foto veterinária" class="profile-picture">
+                    <div>
+                        <p class="profile-name">Eleanor Pena</p>
+                        <p class="profile-profession">Veterinária</p>
+                    </div>
+                </div>
+
+                <img src="src/images/log-out.svg" alt="ícone de sair" id="logout" class="log-out-icon">
+            </div>
+        </div>
+    </div>
+
+    <h1 class="text">Dashboard</h1>
+
+    <script src="src/js/index.js"></script>
+</body>
+</html>

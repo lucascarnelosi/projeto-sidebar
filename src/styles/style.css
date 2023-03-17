@@ -1,0 +1,157 @@
+@charset 'UTF-8';
+
+:root {
+    --body-bg-color: #dce4e3;
+    --green: #18c29c;
+    --light-green: #8ed7c6;
+    --text-color: #084236;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: var(--body-bg-color);
+}
+
+.container {
+    width: 250px;
+    height: 100vh;
+    background-color: var(--green);
+}
+
+.container.off {
+    width: 78px;
+    transition: all .3s ease-out;
+}
+
+.header {
+    display: flex;
+    gap: 119px;
+    align-items: flex-end;
+    margin: 26px;
+}
+
+.header .logo.off {
+    display: none;
+}
+
+.header .menu:hover {
+    cursor: pointer;
+}
+
+.content {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-bar div {
+    width: 222px;
+    height: 50px;
+    margin: 0 14px;
+    padding: 13px;
+
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.nav-bar div:hover {
+    cursor: pointer;
+}
+
+.nav-bar.off div {
+    width: auto;
+}
+
+.nav-bar > div > span {
+    color: var(--text-color);
+    font-size: 15px;
+}
+
+.nav-bar > div > .span.off {
+    display: none;
+}
+
+.search {
+    background-color: var(--light-green);
+    border-radius: 12px;
+}
+
+.nav-bar .search:hover {
+    cursor: auto;
+}
+
+.search span {
+    width: 100%;
+}
+
+.search span:hover {
+    cursor: text;
+}
+
+.footer {
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 47px;
+    background-color: var(--light-green);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile:hover {
+    cursor: pointer;
+}
+
+.profile.off {
+    display: none;
+}
+
+.profile-picture {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    margin: 0 9px;
+}
+
+.profile-name {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: var(--text-color);
+}
+
+.profile-profession {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--text-color);
+}
+
+.log-out-icon {
+    margin-right: 10px;
+}
+
+.log-out-icon:hover {
+    cursor: pointer;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 38px;
+    margin: 18px;
+    color: var(--text-color);
+}
